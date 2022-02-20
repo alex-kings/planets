@@ -9,6 +9,7 @@ const s1 = document.getElementById("scenario 1");
 const s2 = document.getElementById("scenario 2");
 const s3 = document.getElementById("scenario 3");
 const s4 = document.getElementById("scenario 4");
+const s5 = document.getElementById("scenario 5");
 s1.addEventListener("click",()=>{
     newScenario([new Planet(0.2,1,[0,-2,0],[1,0,-0.5],"Planet 1", "rgb(35,170,170)"),
                 new Planet(0.2,1,[2,0,0],[0,1,0.2],"Planet 2", "rgb(24,100,20)"),
@@ -31,6 +32,11 @@ s4.addEventListener("click",()=>{
                 new Planet(0.1,0.05,[0,0,3],[-4,0,0],"Planet 1", "rgb(255,20,20)"),
                 new Planet(0.08,0.005,[0,0,0],[0.4,0,0],"Planet","rgb(0,0,255)")]);
 });
+s5.addEventListener("click",()=>{
+    newScenario([new Planet(1,5,[0,0,0],[0,-0.8,0],"Sun", "rgb(252,198,3)"),
+                new Planet(0.2,1,[5,0,0],[0,5,0],"Earth", "rgb(3,82,252)"),
+                new Planet(0.08,0.05,[5.8,0,0],[0,0,2],"Moon", "rgb(217,208,195)")])
+})
 
 /**
  * Creates a scenario with new planets filling the scene.
