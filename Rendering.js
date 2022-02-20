@@ -37,7 +37,9 @@ s4.addEventListener("click",()=>{
  * @param {Planet[]} newPlanets Planets to fill the scene with.
  */
 function newScenario(newPlanets){
-    scene.clear();
+    planets.forEach((planet)=>{
+        scene.remove(planet);
+    })
     planets = newPlanets;
     planets.forEach((planet)=>{scene.add(planet)});
 }
@@ -58,11 +60,8 @@ const scene = new THREE.Scene();
 // Set lighting
 scene.add(new THREE.AmbientLight("rgb(20,30,40)"));
 const light = new THREE.DirectionalLight("rgb(255,255,255)");
-light.position.set(0, 40, 0);
+light.position.set(40, 40, 40);
 scene.add(light);
-const light2 = new THREE.DirectionalLight("rgb(255,255,255)");
-light2.position.set(5, 0, 0);
-scene.add(light2);
 
 // Time interval since last render
 let date = performance.now();

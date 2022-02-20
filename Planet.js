@@ -9,7 +9,7 @@ class Planet extends THREE.Mesh{
     constructor(size,mass,initialPos,initialSpeed,name, col){
         // Geometry and material
         const geo = new THREE.SphereGeometry(size);
-        const mat = new THREE.MeshBasicMaterial( { color: col} );
+        const mat = new THREE.MeshStandardMaterial( { color: col} );
         super(geo,mat)
         this.position.x = initialPos[0];
         this.position.y = initialPos[1];
