@@ -10,3 +10,8 @@ canvas {
     flex-direction:row;
     gap:2px;
 }
+p{
+    padding:0;
+    margin:0;
+    display:block;
+}

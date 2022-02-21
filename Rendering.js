@@ -23,20 +23,20 @@ s2.addEventListener("click",()=>{
 });
 s3.addEventListener("click",()=>{
     newScenario([new Planet(0.6,10,[0,0,0],[0,0,0],"Planet 1", "uranus1"),
-                new Planet(0.1,0.05,[0,2,0],[7,0,0],"Planet 2", "venus2"),
-                new Planet(0.1,0.05,[0,3.6,0],[-7,0,0],"Planet 2", "jupiter1")])
+                new Planet(0.2,0.05,[0,2,0],[8,0,0],"Planet 2", "venus2"),
+                new Planet(0.2,0.05,[0,3.6,0],[-8,0,0],"Planet 2", "jupiter1")])
 });
 s4.addEventListener("click",()=>{
-    newScenario([new Planet(0.2,2,[-2,0,0],[0,-2,0],"Planet 1", "earth1"),
-                new Planet(0.2,2,[2,0,0],[0,2,0],"Planet 1", "jupiter1"),
-                new Planet(0.1,0.05,[0,0,-3],[4,0,0],"Planet 1", "mars1"),
-                new Planet(0.1,0.05,[0,0,3],[-4,0,0],"Planet 1", "venus1"),
-                new Planet(0.08,0.005,[0,0,0],[0.4,0,0],"Planet","venus2")]);
+    newScenario([new Planet(0.3,2,[-2,0,0],[0,-2,0],"Planet 1", "earth1"),
+                new Planet(0.3,2,[2,0,0],[0,2,0],"Planet 1", "jupiter1"),
+                new Planet(0.2,0.05,[0,0,-3],[4,0,0],"Planet 1", "mars1"),
+                new Planet(0.2,0.05,[0,0,3],[-4,0,0],"Planet 1", "venus1"),
+                new Planet(0.1,0.005,[0,0,0],[0.4,0,0],"Planet","venus2")]);
 });
 s5.addEventListener("click",()=>{
-    newScenario([new Planet(1,5,[0,0,0],[0,-0.8,0],"Sun", "sun"),
-                new Planet(0.2,1,[5,0,0],[0,5,0],"Earth", "uranus1"),
-                new Planet(0.08,0.05,[5.8,0,0],[0,0,2],"Moon", "sun")])
+    newScenario([new Planet(2,5,[0,0,0],[0,-0.8,0],"Sun", "sun"),
+                new Planet(0.4,1,[5,0,0],[0,5,0],"Earth", "uranus1"),
+                new Planet(0.1,0.05,[5.8,0,0],[0,0,2],"Moon", "sun")])
 })
 
 /**
