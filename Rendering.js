@@ -36,7 +36,7 @@ s4.addEventListener("click",()=>{
 s5.addEventListener("click",()=>{
     newScenario([new Planet(1,5,[0,0,0],[0,-0.8,0],"Sun", "sun"),
                 new Planet(0.2,1,[5,0,0],[0,5,0],"Earth", "uranus1"),
-                new Planet(0.08,0.05,[5.8,0,0],[0,0,2],"Moon", "venus1")])
+                new Planet(0.08,0.05,[5.8,0,0],[0,0,2],"Moon", "sun")])
 })
 
 /**
