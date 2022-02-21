@@ -6,10 +6,11 @@ class Planet extends THREE.Mesh{
      * @param {[x,y,z]} initialPos The initial position of the planet
      * @param {[vx,vy,vz]} initialSpeed The initial speed of the planet
      */
-    constructor(size,mass,initialPos,initialSpeed,name, col){
+    constructor(size,mass,initialPos,initialSpeed,name, texture){
         // Geometry and material
         const geo = new THREE.SphereGeometry(size);
-        const mat = new THREE.MeshStandardMaterial( { color: col} );
+        const tex = new THREE.TextureLoader().load("./textures/" + texture + ".png");
+        const mat = new THREE.MeshStandardMaterial( { color:"rgb(255,255,255)", map: tex} );
         super(geo,mat)
         this.position.x = initialPos[0];
         this.position.y = initialPos[1];
