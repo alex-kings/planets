@@ -1,17 +1,20 @@
+body {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
 canvas {
     position: fixed;
-    top: 2.2em;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    z-index:-1;
   }
-.container{
+.flex-container{
     display:flex;
     flex-direction:row;
-    gap:2px;
 }
-p{
-    padding:0;
-    margin:0;
-    display:block;
+.flex-container > *{
+    margin:.1em;
 }
